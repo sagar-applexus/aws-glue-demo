@@ -6,7 +6,7 @@ Resources:
       Role: !GetAtt GlueServiceRole.Arn
       Command:
         Name: glueetl
-        ScriptLocation: "s3://oxy-glue-cicd-bucket/scripts/json_to_csv.py"
+        ScriptLocation: "./df_to_parquet.pyy"
       DefaultArguments:
         "--TempDir": "s3://oxy-glue-cicd-bucket/temp/"
       GlueVersion: "3.0"
