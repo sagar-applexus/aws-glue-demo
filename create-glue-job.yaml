@@ -9,7 +9,7 @@ Resources:
         ScriptLocation: "s3://oxy-glue-cicd-bucket/script/json_to_csv.py"
       DefaultArguments:
         "--TempDir": "s3://oxy-glue-cicd-bucket/temp/"
-      GlueVersion: "2.0"
+      GlueVersion: "3.0"
       WorkerType: G.1X
       NumberOfWorkers: 1
 
